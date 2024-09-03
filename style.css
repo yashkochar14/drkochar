@@ -13,6 +13,58 @@
   transition: all .2s linear;
 }
 
+
+/* Logo adjustment */
+.logo {
+  border-radius: 50%; /* Ensures circular shape */
+  display: block; /* Center logo */
+}
+
+/* Featured products */
+.featured-product {
+  border-radius: 10px; /* Adjust as needed */
+  overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.featured-product img {
+  width: 100%; /* Ensures image covers the container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Adjusts the image to fill the container */
+}
+
+/* New arrivals */
+.new-arrivals {
+  margin: 0; /* Remove gap */
+}
+
+.new-arrivals h2 {
+  text-align: center;
+}
+
+.new-arrivals img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Social media icons */
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons .instagram {
+  href: https://www.instagram.com/drkochars/;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Adjust layout for tablets and smaller devices */
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for mobile devices */
+}
+
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -380,7 +432,7 @@ section {
 }
 
 .about {
-  background: url(https://wallpapers.com/images/hd/kriti-sanon-hug-hd-u93sb6h7r7plr946.jpg) no-repeat;
+  background: url(https://static.vecteezy.com/system/resources/previews/002/006/614/non_2x/paper-art-shopping-online-on-smartphone-and-new-buy-sale-promotion-pink-backgroud-for-banner-market-ecommerce-free-vector.jpg) no-repeat;
   background-size: cover;
   background-position:top;
   background-attachment: fixed;
@@ -416,101 +468,6 @@ section {
   padding: 1rem 0;
 }
 
-.shop .slide {
-  border: 0.2rem solid #222;
-  background: #fff;
-}
-
-.shop .slide:hover .image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.shop .slide:hover .image .icons {
-  right: 1rem;
-}
-
-.shop .slide .image {
-  height: 35rem;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.shop .slide .image .discount {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: .5rem 1.5rem;
-  font-size: 1.5rem;
-  color: #fff;
-  background: #e84393;
-  z-index: 10;
-}
-
-.shop .slide .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.shop .slide .image .icons {
-  position: absolute;
-  bottom: 0;
-  right: -8rem;
-}
-
-.shop .slide .image .icons a {
-  height: 5rem;
-  width: 5rem;
-  line-height: 4.5rem;
-  font-size: 2rem;
-  background: #fff;
-  color: #222;
-  border: 0.2rem solid #222;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  text-align: center;
-  display: block;
-}
-
-.shop .slide .image .icons a:hover {
-  background: #e84393;
-  color: #fff;
-}
-
-.shop .slide .content {
-  padding: 2rem;
-  border-top: 0.2rem solid #222;
-}
-
-.shop .slide .content .stars {
-  padding-bottom: .5rem;
-}
-
-.shop .slide .content .stars i {
-  font-size: 1.5rem;
-  color: #777;
-}
-
-.shop .slide .content p {
-  font-size: 2rem;
-  color: #222;
-  line-height: 2;
-}
-
-.shop .slide .content .price {
-  font-size: 2rem;
-  color: #e84393;
-}
-
-.shop .slide .content .price span {
-  font-size: 1.5rem;
-  color: #777;
-  text-decoration: line-through;
-}
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
